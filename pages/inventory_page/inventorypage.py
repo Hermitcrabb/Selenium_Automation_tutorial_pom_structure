@@ -77,7 +77,7 @@ class InventoryPage(InventoryProperties,BasePage):
         self.checkout_last_name.send_keys(last_name)
 
     def set_postal_code(self,postal_code):
-        self.checkout_postal().send_keys(postal_code)
+        self.checkout_postal.send_keys(postal_code)
 
     def click_continue(self):
         self.checkout_continue.click()

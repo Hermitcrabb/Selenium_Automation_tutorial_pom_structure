@@ -32,7 +32,11 @@ def test_get_items(driver):
     inventory_page.open_checkout()
     inventory_page.set_first_name(users[1]["username"])
     inventory_page.set_last_name(users[1]["password"])
-    inventory_page.set_postal_code
+    inventory_page.set_postal_code("44600")
+    inventory_page.click_continue()
+    inventory_page.click_finish()
+
+    time.sleep(2)
 
 
 
